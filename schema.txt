@@ -1,0 +1,25 @@
+create table product
+(
+product_id int primary key,
+name varchar(128) not null,
+rrp float not null,
+available_from date not null
+);
+create table orders
+(
+order_id int primary key,
+product_id int not null,
+quantity int not null,
+order_price float not null,
+dispatch_date date not null,
+foreign key (product_id) references product(product_id)
+);
+
+101 Bayesian Methods for Nonlinear Classification and Regression 94.95 (last thursday)
+102 (next year) in Review (preorder) 21.95 (next year)
+103 Learn Python in Ten Minutes 2.15 (three months ago)
+104 sports almanac (1999-2049) 3.38 (2 years ago)
+105 finance for dummies 84.99 (1 year ago)
+
+
+insert into product (product_id, name, rrp, available_from) values (101, 'Bayesian Methods for Nonlinear Classification and Regression', 94.95, 2019-10-14)
