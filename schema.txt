@@ -23,3 +23,12 @@ foreign key (product_id) references product(product_id)
 
 
 insert into product (product_id, name, rrp, available_from) values (101, 'Bayesian Methods for Nonlinear Classification and Regression', 94.95, 2019-10-14)
+
+
+
+order_id product_id quantity order_price Dispatch Date
+1000 101 1 90.00 (two months ago)
+1001 103 1 1.15 (40 days ago)
+1002 101 10 90.00 (11 months ago)
+1003 104 11 3.38 (6 months ago)
+1004 105 11 501.33 (two years ago)
